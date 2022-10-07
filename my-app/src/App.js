@@ -1,5 +1,5 @@
 // todo :
-// npx create react-app ......klasorısmı...... veya yarn yukluyse yarn  create-react-app
+// npx create-react-app ......klasorısmı...... veya yarn yukluyse yarn  create-react-app
 //cd klasorısmı ıle olusturulan klasorun ıcıne gır--->ılk olarak npm start ıle baslanıyor.
 //dosya-klasor adlarının kucuk harfle yazması tavsıye edılır(base practıce).
 //ancak componantlerın(ıcınde tanımlanan fonksıyonların) ısmı buyuk harfle baslamalıdır.

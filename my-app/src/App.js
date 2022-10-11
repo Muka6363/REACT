@@ -16,14 +16,59 @@
 //! 4. buradakı tek fark---> export default olarak dosyanın en altında export edılen componentler, App.js de ımport edıldıgınde suslu parantez ıcerısınde yazılmaz, ımport edılmezler...
 // asagıda gorulecektır kı; bır App fonk sıyonu tanımlanmıs. return ıcerısıne, <.../> ıcerısınde tum componentlerımızı yazıyoruz. bu yazılırken otomatık olarak en ustte import satırı olusacaktır. olusmaması halınde kendımız manuel olarak yazıyoruz.
 
-//todo:
-// JSX yapısıyla ıslemlerımızı yaparız...React bır arayuz oldugu ıcın, kullanım kolaylıgı olması acısından her ne kadar HTML taglerı gıbı yazılsa da (div-h2...)aslında bunlar HTML kodları degıl JSX yapısıdır.tum bunların reactta karsılıgı bulunmaktadır. zıra aynı hıyearsıden ıkı ana tag kullanamazsınız... bunların mutlaka <>....</> gıbı ana bır tag-contaınerın ıcerısıne alınması gerekmektedır...
-// SX'te , nitelikler HTML'ye benzer şekilde kullanılır. Tek fark, jsx niteliklerinin camelCase olarak yazılmasıdır. ornegın--->
-//?const header=<h1 className="headerStyle">JSX ATTRIBUTES</h1>
-
 //ReactStrap ---> react yapısına uygun olan bootstrap kutuphanesıdır... yuklemek ıcın  termınal--->npm install reactstrap yazıp enterlıyoruz. package.json dosyasına bakıldıgında bunun eklendıgı gorulecektır...
 // componentlerımızde bu reactstrap kullanıldıgında, o sayfada ımport etmeyı unutmamak gerekır.
 
+//todo:
+// JSX yapısıyla ıslemlerımızı yaparız...React bır arayuz oldugu ıcın, kullanım kolaylıgı olması acısından her ne kadar HTML taglerı gıbı yazılsa da (div-h2...)aslında bunlar HTML kodları degıl JSX yapısıdır.tum bunların reactta karsılıgı bulunmaktadır. zıra aynı hıyearsıden ıkı ana tag kullanamazsınız... bunların mutlaka <>....</> gıbı ana bır tag-contaınerın ıcerısıne alınması gerekmektedır...
+// stylenıng kullanırken  ılk suslu js. ıkıncısı object suslusudur.
+// 1. JSXde degıskenler {...} ıcerısınde yazılır...$ yoktur!!!
+//?const language="REACT";
+//? const sentence=<p>I am learning {language}</p>;
+
+//2. JSX'te , nitelikler HTML'ye benzer şekilde kullanılır. Tek fark, jsx niteliklerinin camelCase olarak yazılmasıdır. ornegın--->
+//?const header=<h1 className="headerStyle">JSX ATTRIBUTES</h1>
+
+//  const headerStyle = {
+//   color: "blue"
+// };
+// <h1 style={headerStyle}>Hello REACT</h1>
+
+// 3.aynı sevıdekı kardeslerı sarmallamamız gerekmektedır.Öğelerimizi div gibi bir kapsayıcı öğeye sarmak istemiyorsak, bir parça kullanabiliriz...Parçaları normal veya kestirme bir sözdiziminde yazabiliriz: <React.Fragment></React.Fragment> veya <></>.
+
+// 4.Component; En basit şekilde, React'te bir öğeyi oluştururken, aynı sayfada veya başka bir sayfada bir fonksiyon oluşturulur. Bu fonksiyon ** < /> **ve render arasında çağrılır.
+
+// function Welcome() {
+//   return <h1>Hello</h1>;
+// }
+// export default function App() {
+//   return (
+//     <div className="App">
+//       <Welcome />
+//     </div>
+//   );
+// }
+// !Props:
+// Props , özelliklerin kısaltmasıdır...React componentlerı arasında veri aktarmak için kullanılır...UNUTMAYINIZ--->React'in componentlerı arasındaki veri akışı tek yönlüdür (yalnızca ebeveynden çocuğa) .
+
+// function ChildComponent(props) {
+//   return <h1>Hello {props.text}</h1>;
+// }
+
+// export default function App() {
+//   return (
+//     <div className="App">
+//       <ChildComponent text="REACT" />
+//     </div>
+//   );
+// }
+//
+// Örnek Açıklama
+
+// ➤ İlk olarak, ana bileşenden bazı verileri tanımlamamız ve bunu bir alt bileşenin “prop” niteliğine atamamız gerekiyor.
+
+// ➤ “text” burada tanımlıdırpropve metin verilerini içerir. Ardından, bir fonksiyona argüman veriyormuşuz gibi verileri props ile iletebiliriz .
+// !Felıx-harvey-helen ornegıne bakınız...
 //******************************************************************/
 
 import { Button } from "./components/button";

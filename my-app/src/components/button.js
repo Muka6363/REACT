@@ -3,4 +3,4 @@ const Button = () => {
   return <button>OK</button>;
 };
 
-export { Button };
+export { Button }; // default olarak tanımlanmayacaksa {...} ıcerısıne yazılır.

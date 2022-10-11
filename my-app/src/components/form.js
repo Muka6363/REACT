@@ -45,3 +45,4 @@ const Ourform = () => {
 };
 
 export default Ourform;
+// burada bır html tag ı olan form kullanılmıstır. bunu jsx formatına cevırıp buraya yazıyoruz. babel...

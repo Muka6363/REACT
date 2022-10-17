@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+.footer {
+  font-family: "Lobster", cursive;
+  background-color: #ffc506;
+  padding: 2rem;
+  border-top: 15px solid white;
+  text-align: center;
+}
+a,
+h3 {
+  color: rgb(0, 0, 0);
+}
+
+.footer a:hover {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+span {
+  color: white;
+}

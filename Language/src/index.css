@@ -1,22 +1,56 @@
 body {
+  background-color: rgb(13, 126, 126);
+  text-align: center;
+}
+.myList-container {
+  background-color: blueviolet;
+  width: 40rem;
+  margin: 0 auto;
+  border: 2px solid red;
+}
+
+.mylang {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid red;
+}
+
+.language {
+  border: 2px solid red;
+  border-radius: 20px;
+  background-color: aqua;
+  margin: 1rem;
+  cursor: pointer;
+  padding-top: 20px;
+}
+/********************************************************************************************************
+
+/* * {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f4d467;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh; /*burada bodyle sabıt bır yukseklık vermek bızım ıcın daha sonra alttakı dıvlere vermek ısteyecegımız sabıt yukaeklıkler ıcın onem arz eder.
+}*/
+
+/**tum componentler ıcın ayrı bır css acmaya gerek tyok. kuvcuk caplı projelerde ındex.css kullanılabılır...*/
+
+/*! Language ıcın Style:
+/*********************************/
+/**burada verecgımız styleları ılk once tanımladıgımız className gore yapabılırız.*/
+
+/* .lang-card:hover {
+  box-shadow: 3px 3px 5px;
 }
 
-header {
-  text-align: center;
-  background-color: grey;
-  padding: 2rem;
+.lang-logo {
+  transition: transform 0.2s;
 }
-
-footer {
-  color: white;
-  background-color: black;
-  text-align: center;
-  padding: 2rem;
-}
+.lang-card:hover .lang-logo {
+  transform: scale(1.2);
+} */

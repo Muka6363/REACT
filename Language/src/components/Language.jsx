@@ -17,7 +17,10 @@ const Language = ({ item }) => {
         </>
       )}
       {desc && (
-        <ul style={{ color: "white", width: "15rem" }}>
+        <ul
+          className="language_text"
+          style={{ color: "black", width: "15rem" }}
+        >
           {options.map((desc) => {
             return <li> {desc}</li>;
           })}

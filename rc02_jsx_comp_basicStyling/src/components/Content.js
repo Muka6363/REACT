@@ -10,10 +10,10 @@
 //* Material UI, Styled Component, Sass, Bootstrap v.b harici kutuphaneler kullanilabilir.
 // inlıne style uygulalma; ılk suslu js suslusudur. ıkıncı susulu objenın suslusudur.
 
-import img2 from "../img/spring2.jpg"; // ? Dahili bir resim eklemek icin import yapmak gereklidir.
+import img2 from "../img/spring2.jpg"; // ? Dahili bir resim eklemek icin import yapmak gereklidir.burada ımport edılır. asagıda ıse src ye {...} ıcerısınde bu degısken cagırılır. img2 ısmı gıbı ıstedıgımız ısmı verebılırız.
 import "./content.css"; // bu sekılde bır harıcı css dosyasını ımport ederek de style verebılıyoruz...
 const Content = () => {
-  //* JS alanı
+  //* JS alanı: UNUTMA... bır js kodu vs yazmak ıstıyorsan bu alanda yazacaksın.JSX alanın dısında JS nın ıcınde
   const imgStyle = {
     display: "block",
     width: "300px",

@@ -4,7 +4,7 @@ const data = [
     name: "Ayşe yılmaz",
     job: "Developer",
     comment: "Uygulamayı çok beğendim...",
-    img:"https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg",
+    img: "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg",
   },
   {
     id: 2,

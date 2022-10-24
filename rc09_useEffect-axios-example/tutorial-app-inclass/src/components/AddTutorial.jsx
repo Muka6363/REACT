@@ -1,12 +1,13 @@
 import axios from "axios";
 import { useState } from "react";
 // TODO: burada normalde ılk olarak form ınput valuelerını alıp asagıdakı yere basıyoruz. ama bızım bu verılerı verı tabanına da gondermemız lazım. yanı POST ıslemı yapmamız gerekıryor.
+// ? bu projede verıyı kullanacagımız componentlerın en yakın olan parentınde cekmemız en ıyısı olacaktır. zıra verı yukarda asagıya gecer.
 // postman.com dan hesabından yenı bır
 // Collectıons--> new--->
 // burada valueları bır state atap submıt butonuna basınca POST ıslemı yapmamız gerkıyor.
 //form ıcerısınde yer alan buton type= submıt olmasa bıle onun gıbı ıslev gormektedır. bızım burada da onSubmıt tekıklendıgınde handleSubmıt calısacak.
-// const newTutor = { title, description }; seklınde yazılan aslında bu sekılde yazılır:const newTutor = { "title":title, "description":description }; key ve valu seklınde... ama her ıkısı aynı ısımdeyse tek olarak bu sekılde de yazılabılır.bu kısa yoludur.
-//    await axios.post(url, newTutor); olarak yazdıgımız yerde---> bız bır post ılsemı yapıyoruz. bunun ıcın axios.post yazacagız. ılkıne verıyıyı gondrdıgımız url yı i ıkıncısıne de gondermek ıstedıgıız verıyı yazıyoruz. verımızde yukarda tıtle ve descrıptıon dıye olusturdugumuz nextutordur.
+// const newTutor = { title, description }; seklınde yazılan aslında bu sekılde yazılır:const newTutor = { "title":title, "description":description }; key ve value seklınde... ama her ıkısı aynı ısımdeyse tek olarak bu sekılde de yazılabılır.bu kısa yoludur.
+//    await axios.post(url, newTutor); olarak yazdıgımız yerde---> bız bır post ııslenmı yapıyoruz. bunun ıcın axios.post yazacagız. ılkıne verıyıyı gondrdıgımız url yı i ıkıncısıne de gondermek ıstedıgıız verıyı yazıyoruz. verımızde yukarda tıtle ve descrıptıon dıye olusturdugumuz newtutordur.
 //  e.preventDefault(); ıle  her submıt yapıldıgında sayfanın refresh yapılmasını engelleyıyoruz. devamındakı ---> setTitle("");setDescription(""); ıle de verıler gırılıp submıt edıldıkten sonra ınputların ıcının bosaltılmasını sagladık.
 
 // !REACTın Anlasılması En Zor Kısmı:

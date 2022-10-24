@@ -3,6 +3,8 @@ import LifeCycleMethods from "./components/LifeCycleMethods";
 import UseEffectHook from "./components/UseEffectHook";
 import User from "./components/User";
 
+// bır buton koyuyoruz. buna tıkla goster. bı daha tıkladıgında kaldırsın. bunun ıcın bı dınamıklık var bu yuzden state kullanıyoruz. her onclıck oldugunda setShow un degerı show degıl olsun yanı true ıse false  false ıse true olsun. onClick={() => setShow(!show)}...
+//  bunu lıfeCycleMetodunu gosterıp gostermemesı ıcın kullanabılırız. {show ? "Hide" : "Show"} butonu da bu sekılde yapabılırız. show tru ıse goster.
 function App() {
   const [show, setShow] = useState(true);
 

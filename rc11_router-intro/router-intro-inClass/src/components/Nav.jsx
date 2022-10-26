@@ -1,4 +1,6 @@
 import { Link, Navlink } from "react-router-dom";
+
+// link-navlink de href yerıne to kullanılır.
 const Nav = () => {
   return (
     <ul>

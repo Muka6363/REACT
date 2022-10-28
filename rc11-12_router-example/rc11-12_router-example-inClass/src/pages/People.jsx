@@ -7,6 +7,8 @@ import { Link, useNavigate } from "react-router-dom";
 // ancak bunu yaptıktan sonra App.js de   <Route path="people/:id" element={<PersonDetail />} /> seklınde bı route olusturmamız gerekıyor. yoksa bu sekılde bır sayfa bulamayacaktır. :id seklınde yazılmasının anlamı --->bunu bır degısken oldugunun gostergesıdır.
 // ...{ state: person })}seklınde kısının bılgılerını dıger sayfaya gonderebılıyoruz. burada state yerıne baska bır ısım kullanamayız key ısmı state value de gondermek ıstedıgımız verıyı yazıyoruz. burdakı personun bılgılerını gonderecegımız ıcın person yazdık.
 
+// Relatıve Path --->
+// Absolıat Path---> acık acık tum yolu yazdıgımız pathdır.
 const People = () => {
   const [people, setPeople] = useState([]);
   const navigate = useNavigate();

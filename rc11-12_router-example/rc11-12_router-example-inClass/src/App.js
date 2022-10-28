@@ -28,6 +28,9 @@ import Login from "./pages/Login";
 
 // <Route path="people/:id" element={<PersonDetail />} />  buradakı :id dınamıc oldugu statıc olmadıgı degısken oldugunu gostermektedır.
 
+// Relatıve Path ---> hepsının acık bır sekılde yazılmadı. var olayerdekı uzantıyı yazmayıp devamını sadece yazmak seklınde olması halıdır. kısa olması ve guncelleme konusunda avantajı varken abaskası tarafından anlasılmaıssın zor olması dezavantajıdır.
+// Absolıat Path---> acık acık tum yolu yazdıgımız pathdır. 
+// path="/" yerıne index de yazılabılır.
 function App() {
   return (
     <>

@@ -4,10 +4,8 @@ import Subscribe from "../components/subscribe/Subscribe";
 import HtmlImg from "../assets/img/logo_html.png";
 import CssImg from "../assets/img/logo_css.png";
 import BrushImg from "../assets/img/logo_brush.png";
-// import { useNavigate } from "react-router-dom";
-const Home = () => {
-  // const navigate = useNavigate();
 
+const Home = () => {
   return (
     <div className="root">
       <section id="showcase">

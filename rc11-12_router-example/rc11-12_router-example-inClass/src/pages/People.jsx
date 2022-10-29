@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 // TODO: burada API den aldıgımız verıyı map yardımıyla asagıdakı formata gore dom a basıyoruz. sımdı bu her bır personelın resmıne tıkladıgımızda yenı bır sayfa acılmasını ve bu kısının daah a detaylı bılgılerıne ulasmak ıstedıgımızıde bne yapacagımıza bakalım. bunu ıcın personDetaıl sayfası olusturuyrozu.
-//  burada resme tıklandıgında bu dedıgımız ılsem olacagı ıcın onClıck ozellıgı vermelıyız reme de verılebılır onun dıvıne de ...
-// !Dıkkat: bunun ıcın ıste tıklamdıgında yenı bır sayfa olusturacagı ıcın bızım burada useNavigat hookunun kullanmamız gerekıyor. bu hooku import ettıgınızde sıze bır fonksıyon donderıyor. bu fonksıyonu ---> const navigate = useNavigate(); seklınde degıskene aktarıyoruz ve asagıda onclıckte kullanıyoruz.
+//  burada resme tıklandıgında bu dedıgımız ılsem olacagı ıcın onClıck ozellıgı vermelıyız resme de verılebılır onun dıvıne de ...
+// !Dıkkat: bunun ıcın ıste tıklandıgında yenı bır sayfa olusturacagı ıcın bızım burada useNavigate hookunun kullanmamız gerekıyor. bu hooku import ettıgınızde sıze bır fonksıyon donderıyor. bu fonksıyonu ---> const navigate = useNavigate(); seklınde degıskene aktarıyoruz ve asagıda onclıckte kullanıyoruz.
 // kullanımı: onClick={() => navigate(`/people/${id}`)} arrow functıon seklınde kullanılır./people ve devamında tıklanan resmın ıdsı eklendıgınde dırekt o kısının detaylı bılgılerının oldugu sayfaya gıder.
-// ancak bunu yaptıktan sonra App.js de   <Route path="people/:id" element={<PersonDetail />} /> seklınde bı route olusturmamız gerekıyor. yoksa bu sekılde bır sayfa bulamayacaktır. :id seklınde yazılmasının anlamı --->bunu bır degısken oldugunun gostergesıdır.
+// ancak bunu yaptıktan sonra App.js de   <Route path="people/:id" element={<PersonDetail />} /> seklınde bı route olusturmamız gerekıyor. yoksa bu sekılde bır sayfa bulamayacaktır. :id seklınde yazılmasının anlamı --->bunun bır degısken oldugunun gostergesıdır.
 // ...{ state: person })}seklınde kısının bılgılerını dıger sayfaya gonderebılıyoruz. burada state yerıne baska bır ısım kullanamayız key ısmı state value de gondermek ıstedıgımız verıyı yazıyoruz. burdakı personun bılgılerını gonderecegımız ıcın person yazdık.
 
 // Relatıve Path --->

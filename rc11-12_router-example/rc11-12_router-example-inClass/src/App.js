@@ -26,10 +26,10 @@ import Login from "./pages/Login";
 //* Ornegin bir fonksiyon,event veye UseEffect icerisinde programsal
 //* olarak yonledirme yapmak icin kullanilabilir.
 
-// <Route path="people/:id" element={<PersonDetail />} />  buradakı :id dınamıc oldugu statıc olmadıgı degısken oldugunu gostermektedır.
+// <Route path="people/:id" element={<PersonDetail />} />  buradakı :id dınamıc oldugu statıc olmadıgı, degısken oldugunu gostermektedır.
 
 // Relatıve Path ---> hepsının acık bır sekılde yazılmadı. var olayerdekı uzantıyı yazmayıp devamını sadece yazmak seklınde olması halıdır. kısa olması ve guncelleme konusunda avantajı varken abaskası tarafından anlasılmaıssın zor olması dezavantajıdır.
-// Absolıat Path---> acık acık tum yolu yazdıgımız pathdır. 
+// Absolıat Path---> acık acık tum yolu yazdıgımız pathdır.
 // path="/" yerıne index de yazılabılır.
 function App() {
   return (

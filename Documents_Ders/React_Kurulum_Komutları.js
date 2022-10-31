@@ -93,3 +93,7 @@
 // npm install react-router-dom@6.3
 // yarn add react-router-dom@6.3
 // *suan en son surum olan 6.4.2 versıyonu cıktı. @6.3 yazmazsan o yuklenır. bız suan pıyasa da en cok bu kullanıldıgı ıcın bunu yukluyoruz.
+
+//? Styled Components
+// yarn add styled-components
+// npm install --save styled-components

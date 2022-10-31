@@ -3,6 +3,15 @@ import Container from "./components/Container.styled";
 import HeaderText from "./components/HeaderText.styled";
 import StyledLink from "./components/Link.styled";
 
+// TODO: yarn add styled-components seklınde yuklemesı yapılır... bıldıgımız css ı component olarak yazıyoruz.
+// butun styleler tamamen yuklenmıyor. sadece uzerıne yuklenen sayfalar-componentler cagrıldıgında sadece o styleler yuklenır. acılısta gereklı olan yanı render de olanların yuklenmesını saglar, o an ıtıbareyle yuklenmesıne gerek olmayanların yuklenmesını engellıyor.
+// burada clasName kullanılmıyor. kendısı componentıne gore unıq clasname verıyor zaten.
+// burada propa gore dınamıc style verılebılıyor.
+// once component gıbı olusturuyoruz sonra ıstedıgımız yerde - baska sayfada ımport ederek cagırıyoruz.
+// ılk olarak ılk butonu ekledık. self cloesıng olmadıgı ıcın <Button/> seklınde degıl bu sekılde yazdık--> <Button>Clear</Button>
+//*PROPS GONDERMEKLE---> <Button primary= {primary} >Save</Button> seklınde-formatında props tanımlayabılırız. aynı ısımde oldugu ıcın dırekt <Button primary >Save</Button> sekılde yazabılırız. cogu bu sekılde yazılır. sımdı burdan boyle bır props a renklerı nasıl baglayacagız. button styled e gıdınız...
+//*********************
+// contaıner.st. sayfasında olusturdugumuz---> kapsayıcı bır Contaıner ısımlı bır dıv-component hazıladıktan sonra App.js burada olusturyoruz. ve olusturdugumuz butonları onun ıcıne koyuyoruz. boylece comp. olarak olusturdugumuz cont.dakı style ozellıklerı burdakı butonlara uygulanacaktır.
 const App = () => {
   return (
     <>

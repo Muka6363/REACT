@@ -1,5 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
+// TODO: sass da yaptıgımız gıbı bellı bı kısmın stylıngını bır yerde verebılıyoruz. yukarıdakı gıbı bı ımport edılıyor. ve asagıdakı gıbı baslangıc olarak olmasını ıstedıgımzı tum ozellıklerı backtıck ıcerısınde burada belırtıyoruz. daha sonra App.js ye gıdıp burada olusturdugumuz componentı cagırıyoruz.    <GlobalStyles /> seklınde... bulece tum ozellıklere tum projeye uyarlanmıs olacaktır.
+
 export const GlobalStyles = createGlobalStyle`
 * {
   box-sizing: border-box;

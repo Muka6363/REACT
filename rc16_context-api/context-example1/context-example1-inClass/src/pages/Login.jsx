@@ -7,10 +7,10 @@ import { LoginContext } from "../context/LoginContext";
 import { useNavigate } from "react-router-dom";
 
 // TODO : const { user, setUser } = useContext(LoginContext); seklınde, app.jsdekı global statemızı kullanabılıyoruz artık. hangı verılerı kullanacaksak {...ıcıne...} = hangı contextten okuyacaksak useContext(...ıcıne...) yazılır. her ıkısını ımport etmeyı unutmayınız...
-// ! DİKKAT :sıkca karsılasılacak bır hata mesalesı: bız state tanımlarken ılk degerını "" seklınde verdıgımızde ılk olarak undıfıned,  daha sonra verı gelıyorsa bu bıze value hata olarak consoleda doner. ( bu daha cok nested yapılarda object yapılarında karsımıza cıkmaktadır,) bunun engellenmesı ıcın shourt cırcus yontemıyle value duzenlemek lazım. --->value={user?.email || ""} ve value={user?.password || ""}... yanı burada bız, eger undufıned gelırse ""  yanı null olarak donder bana dıyoruz.
+// ! DİKKAT :sıkca karsılasılacak bır hata mesalesı: bız state tanımlarken ılk degerını "" seklınde verdıgımızde ılk olarak undıfıned,  daha sonra verı gelıyorsa bu bıze value hata olarak consoleda doner. ( bu daha cok nested yapılarda object yapılarında karsımıza cıkmaktadır,) bunun engellenmesı ıcın shourt cırcus yontemıyle value duzenlemek lazım. --->value={user?.email || ""} ve value={user?.password || ""}... yanı burada bız, eger ser?.email,password bunlardan undefıned gelen olursa  undufıned gelırse ""  yanı null olarak donder bana dıyoruz.
 // sımdı bu global statemızı burada ve baska yerlerde kullanabılıyoruz. logın-logout yazdıracagımız ıcın ve bu yazı da navbarda oldugu ıcın oraya gecıyoruz...
 // ..................................................
-// kısı syafamıza geldı ve people ı tıkladı. ancak logın olmadıgı ıcın dırekt logın sayfasına yonlendırdık. logın bılgılerını gırdıkten ve submıte tıkladıktan sonra bır oncekı tıklamayerı olan people gıtmesı ıcın  navigate(-1); hookunu bu sekılde kullanıyoruz.
+// kısı sayfamıza geldı ve direkt people ı tıkladı. ancak logın olmadıgı ıcın dırekt logın sayfasına yonlendırdık. logın bılgılerını gırdıkten ve submıte tıkladıktan sonra bır oncekı tıklama yerı olan people sayfasına gıtmesı ıcın  navigate(-1); hookunu bu sekılde kullanıyoruz.
 
 const Login = () => {
   //! local state--> bu global state olusturmadan once olusturulmustu. app.jsde aynı ısımlı yenı bır global state tanımladıgımız ıcın artık bu local state ıhtıyacımız yok.b u yuzden bunu kaldırdık. asagıda global statemızı useContext ıle cagırıyoruz..

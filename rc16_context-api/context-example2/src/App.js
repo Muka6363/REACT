@@ -11,7 +11,7 @@ import Login from "./pages/Login";
 import PrivateRouter from "./pages/PrivateRouter";
 import LoginProvider from "./context/LoginProvider";
 
-// TODO: <LoginProvider>....</LoginProvider> ıle bu sarmallamayı yaparız.
+// TODO: <LoginProvider>....</LoginProvider> ıle bu sarmallamayı yaparız. bununla sarmalladıklarımızın hepsı LogınProvıderın chıldları olmaktadır.
 function App() {
   return (
     <LoginProvider>

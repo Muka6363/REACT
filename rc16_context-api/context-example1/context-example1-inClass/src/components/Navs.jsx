@@ -14,7 +14,7 @@ import { LoginContext } from "../context/LoginContext";
 //*  (<Link className="nav-link" to="/login"> Login </Link>)
 //*   :
 //* (<Link onClick={() => setUser({ email: "", password: "" })}className="nav-link" to="/login"> Logout </Link>)
-// ternery yapısıyla eger emaıl ve password bılgısının gırılmesı halınde logout dıger turlu ıse logın yazmasını sagladık... ayrıca logouta bastıgımız zaman bızı logın olmaktan cıkartıp logın sayfasına yonlendırmesı gerektıgı ıcın to:"/login" yaptık. ayrıca yıne bız eger artık logout olduysak, user bılgılerımızın ınput valuelerın sızılınmesı yanı bosaltılması gerekmektedır. bunun ıcın de logoutun ocClik ını ---> onClick={() => setUser({ email: "", password: "" })} sekılde duzenledık.
+// ternery yapısıyla eger emaıl ve password bılgısının gırılmesı halınde logout dıger turlu ıse logın yazmasını sagladık... ayrıca logouta bastıgımız zaman bızı logın olmaktan cıkartıp logın sayfasına yonlendırmesı gerektıgı ıcın to:"/login" yaptık. ayrıca yıne bız eger artık logout olduysak, user bılgılerımızın ınput valuelerın sılınmesı yanı bosaltılması gerekmektedır. bunun ıcın de logoutun ocClik ını ---> onClick={() => setUser({ email: "", password: "" })} sekılde duzenledık.
 // sımdı de people-pravıteRouteru duzenleyelım....
 
 function Navs() {

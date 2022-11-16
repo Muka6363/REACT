@@ -1,5 +1,8 @@
 import { useState } from "react";
 
+// TODO: burada async yapıyla verı cekme ıslemı yaptık. ve normal sartlarda 3 adet state tanımladık. try catch ve fınally yapısıyla ekrana yazdırdık.
+// Reduc--->ındırgeyıcı-azaltıcı demektır... ıste 5-10-100 tane statemız bıle olsa bunları azaltıcı bır yapımız var ona Reducer dıyoruz. pekı bunu nasıl kullanıyoruz...bunu ıcın useReducer ısmınde yenı bır jsx dosyası acarakbaslayalım. ıcerıgı aynen kopyalayalım ve uzeronden degısıklık yapalım...
+
 const UseStateExample = () => {
   const [catImage, setCatImage] = useState("");
   const [error, setError] = useState("");

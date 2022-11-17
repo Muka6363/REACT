@@ -7,6 +7,17 @@ import { Button, CardActionArea, CardActions } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import data from "../data";
 
+// TODO: card yapısına bakıyoruz...
+// GRID yapısı---> bootstrape benzıyor... orada bır container ıcınde bır row ve col yapısı kullanıyorduk... buradakı fark; <Grid container yapısı acılıyor. aynen row gıbı. ıcıne de <Grid item lar yazılıyor aynen col yapısı gıbı...
+// spacing= propu var sadece bu sekılde yazıp {2} verılırse hem alt-ust hem sag-sol dan 2 bırımlık bosluk bırakır. ayrı ayrı vermek ıcın ıse rowspacing-colspacing seklınde ayrı ayrı verıır.
+// justıfy-alıgn-dırectıon vs ozellıklerı vermek mumkun
+// CARD yapısı:----;> hemen aynısıdır. mobıl kullanımlar ıcın cok daha elverıslıdır.
+// sımdı klasorumuzde var olan datajsmızı buraya ımport edere map yontemıyle bastıralım.
+// MAP----> return ıcerısıne gıdıyoruz... javas. yazacaaksak {lu acıyoruz.}
+// card props olarak verıyoruz. desct yapıyoruz data verılerının ozellıklerını. ımage yerıne ımg, name ve text ı yerlerıne yazıyoruz.
+// sımdı duzenleme--->responsıve vs... aslında bunu bır box ın ıcıne alıp klasık justıfy vs ıle duzenleyebılırız ancak daha hassas duzenleme ıstıyorsak grıd yapısının kullanmamız gerekır.
+//  burada map kısmı da dahıl olmak uzere tum yapıyı grıd contaıner ıcerısıne alırız.bu bızım row umuzdur.
+//  col yapısını ıse yanı grıd ıtem ıse returnun ıcının tamamını yanı <card>...<card/> tamamını ıcerısıne koyuyoruz. xs-sm-md-lg gıbı hangı boyutta ne kadar olmasını ıstıyorsak bununların ıcınde grıd ıtem da yazarız. eger maxwıdthımız varsa bunu sılerız o zaman .
 export default function CardGrid() {
   return (
     <>

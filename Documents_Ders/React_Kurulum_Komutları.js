@@ -97,3 +97,14 @@
 //? Styled Components
 // yarn add styled-components
 // npm install --save styled-components
+
+// ?Materıal UI
+//ılk ANa kurulum=> yarn add @mui/material @emotion/react @emotion/styled
+// font ıcın kurulum=> yarn add @fontsource/roboto seklınde kurulum veya alttakı uzantıyı ındex.html e yapıstırmakla yapılabılır.
+// ındex.html=>
+/* <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+/>*/
+// Eger ıconlarını da kullanmak ıstıyorsak => yarn add @mui/icons-material
+//  bunu da kurmak lazım

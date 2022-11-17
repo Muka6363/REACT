@@ -31,3 +31,10 @@ const Home = () => {
 };
 
 export default Home;
+// TODO: GENEL BILGILER...
+// www.mui.com adresınden ulasılır.--->get started--->Installatıon
+// component bese bır kutuphanedır.
+// aradıgınız ne ıse onun ısmını yazarak aynen react vd gıbı kalıplarına ulasılabılır.
+// yarn add @mui/material @emotion/react @emotion/styled ıle kurulumu yapılabılır.
+// bu materıal uı n en buyuk farkı. etıket ısımlerının farklı olması ornegıın header h1h2h3h4h5h6 yerıne typography ısmıkullanılmaktadır. bunlara asına olmak lazım .haydın baslıyoruz...TypoButton.js ye gıdınız...:)
+//  unutmayın pages ı olusturuyor burada topluyoruz. buraya ımport edıyoruz.

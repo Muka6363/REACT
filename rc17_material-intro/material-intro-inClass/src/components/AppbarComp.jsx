@@ -10,6 +10,10 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 
+// TODO: bızım bıldıgımız Navbar burada Appbar dır...
+// MUI de bır numune alıp buraya yapıstırdık.
+// bu appbar da ekran kuculdugunde bazı yazılar kayboluyor ve yerıne hamburger menu cıkıyor. yanı ---> <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>... dısplayınde xs ve smde gorunecek ama md de gorunmeyecek sekılde yazabılıyoruz.
+
 const pages = ["Products", "Pricing", "Blog"];
 
 function AppbarComp() {

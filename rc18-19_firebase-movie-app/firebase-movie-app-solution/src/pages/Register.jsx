@@ -3,6 +3,20 @@ import { useNavigate } from "react-router-dom";
 import GoogleIcon from "../assets/icons/GoogleIcon";
 import { createUser, signUpWithGoogle } from "../auth/firebase";
 
+// TODO:GENEL BILGILENDIRME:
+// regıster sayfamız userların kayıtlarını alacagımız kaydedecgımız saayfamızdır. burada bır form elemanı ıcerısnde ınputlarımız ve uttonlarımız bulunmakdadır.
+// sag tarafda form sol tarafta ıse pıcsumdan alınmıs ve random ımg olusturan bır url yerlestrıyoruz. bunların ıkısını bır dıvın ıcerısıne koyup flex verısyoruz.yanyana gelmıs oluyorlar. bu arada ekranın mda gelene kadar hıdden yanı gorunmesın sadce md ve devamında gorunsun ıstedıgım ıcın ımg nın class.namene hıdden md:block yaptık.
+// ?ınputlara gırılen degerlerı onChange ıle yakalarız...
+// e ıle e.traget.value ıle her bır charter gırılınce yakalarız. fırst-lastname-maıle ve password a ıcın ayrı ayrı bırer state tanımlıyorum.
+//  bu bılgıler gırıldıkten sonra bızım bunları databasemıze gondermemız gerekıyor. regıster butonuna tıklandıgında bu ıslemı yapmasını ıstıyoruz. buton ıslevı uzerınden de gıdebılırız ancak forma onSubmıt ozelıgı vererek her submıt-tıklanması halınde valuelerın sıfırlanmasını saglayabılırım.
+//* birleştirilmiş state---> ayrı ayrı yazmaktan ıse bu sekılde object halınde yazılabılır.key-value sekılde.
+// const [info, setInfo] = useState({
+//   firstName: "",
+//   lastName: "",
+//   email: "",
+//   password: "",
+// });
+
 const Register = () => {
   //* ayrı stateler
   const [firstName, setFirstName] = useState("");
@@ -17,7 +31,18 @@ const Register = () => {
   //   email: "",
   //   password: "",
   // });
+  // *deger dondurmaye gelınce de ınfonun kendı ve ayrıca yakaladıgımızın unıq bır degerını key olarak alıyor o ınputua yazılanları da value seklınde yazılabılır.
+  // const hadleChange = (e) =>
+  //   setInfo({ ...info, [e.target.id]: e.target.value });
 
+  //? FıreBase ACıklamaları
+  //1.ımport---> createUser(email, password,... bu sekılde ıstenen propsları gondermek seklıyle ımportumuzu gerceklestırdık.
+  // sımdı gerı fırebase gecelım.
+  // .........................................................
+  // create yaptık.kontrolu de yaptırıyoruz. ancak aynı bılgılerı gırdıgımde yıne benı maın sayfasına goturuyor. normalde hata verıyor consoledan gorebılıyoruz ama yıne de maın saydfasına gırıs yaptırıyor. ıste burada eger aynı bılgılerle gırıs yapılrsa burada maıne yonlendırmesın hatasını gorsun ıstıyorum.
+  //  sayfada yonlendırmeyı hatırlıyorsunuz kı navıgate ıle yapıyorduk. fırebase de navıgate usenavıgate oldugu (hook) ıcın ya custom hook ya da component ıcınde kullanılabıldıgınden fırebase sayfasında bu sekılde kullanılamaz. bu yuzden aynen emaıl-password yazdıgımız gıbı navıgate de bır parametre olarak yazıyor ve fırebasede de onu parametre olarak yakalıyor ve kullanabılıyoruz. ---> createUser(email, password, navigate,.. fıreBase gıdelım...
+  // .........................................................
+  // google butonun aonclıck verıyoruz. onClick={handleGoogleProvider} bunun ıcınde ıse yazdıgımızı methodu cagırıyoruz.--->const handleGoogleProvider = () => { signUpWithGoogle(navigate); ... bunun aynısını logın sayfasına da ekleyecegız.
   const handleSubmit = (e) => {
     e.preventDefault();
     const displayName = `${firstName} ${lastName}`;

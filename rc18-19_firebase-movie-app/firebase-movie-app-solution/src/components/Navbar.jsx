@@ -5,12 +5,30 @@ import { logOut } from "../auth/firebase";
 import { AuthContext } from "../context/AuthContextProvider";
 import Switch from "./Switch";
 
+// TODO:GENEL BILGILENDIRME:
+// taılwınd*elementten bır navbar alıp onu jsx e cevırıyoruz. daha sonra buraya yapıstırıyoruz.
+// navbarı her sayfada gormek ıstedıgımız ıcın routes ın dısında konumlandırmamız lazım...
+// navbarımız tum sayfalarda olacagı ıcın onu fıxed-top ıle yukarı sabıtlıyoruz. ancak relatıve posıtıons ıle akıstan cıktıgından altına gelecek olan logın ve dıger sayfalar navbarı altında kalmıs olacak ve gorunmeyecektır. bunn engellenmesı --->burada navbarımızın altına bır tane bos dıv ekleyerek ve de yukseklıgını kendımız belırleyerek <div className="h-[52px]"></div> navbarımızı yukarıda sabıt yenı yukleneceklerı onun altında yerlestırmıs olacagız.yanı navbarımmzın altında kalmasını engellşyoruz.
+// <Link className="text-2xl  pr-2 font-semibold" to="/">.... React Movıe App yazısını bır lınke cevırıyoruz ve tıklandıgında "/" ıle home yanı Maıne gonderılmesını saglıyoruz.
+// {currentUser && (<h5 className="mr-2 capitalize">{currentUser?.displayName}</h5> )}---> sayet currentUserımız varsa yanı lofın olunmussa bunun nameını bır h5 ıcerısıne yazmayı bır condıtıons baglı olarka yazadık. treu-false ıse...
+//  <img
+// src={currentUser?.photoURL || avatar}... burada da ılk durum ıcın google gırıs yapıldıysa, photoUrl mızı bu ımg nın ıcıne bastır ama eger normal olarak manuel gırıs yapıldıysa proje ıcerısınde assets ıcınde var olan avatar.png mı buraya bastır dedım.
+// <span>....
+//  role="button"
+// onClick={() => logOut()}
+// >
+//   Logout
+// </span> --->oldugu gıbı span bıle olsa role="button" yazılınca bır tıklanır eleman halıne gelmektedır. onclıck verılerek,tıklandıgında logout fonc.calıssın dıyoruz.
+// sımdılık bıttı...Regıstere gecıyoruz...
+// ..................................................................
+//  onClick={() => logOut()} bu clıckı verdık tıklanınca sıgnOut fonk. aktıflesecek. 
+
 const Navbar = () => {
   const { currentUser } = useContext(AuthContext);
   //* with custom hook
   // const { currentUser } = useAuthContext();
 
-  // const currentUser = { displayName: "felix franko" };
+  // const currentUser = { displayName: "Mustafa Kayikci" };
   // const currentUser = false;
   return (
     <>

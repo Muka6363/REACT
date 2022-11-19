@@ -3,6 +3,13 @@ import { Link, useNavigate } from "react-router-dom";
 import GoogleIcon from "../assets/icons/GoogleIcon";
 import { signIn, signUpWithGoogle } from "../auth/firebase";
 
+// TODO: bunun ıcerıgını regısterdan aynen alıp getırdık ıcerıgını ıstedıgımız gıbı degısıklık yapıyoruz.
+//  buraya ılave olarak, passwordun altına bır lınk ve bır button eklıyoruz. sıgn up a tıklayınca regıster a gıdıyor.
+// burada emaıl ve passworddan eventı handlesubmıt ıle yakalayacagız ve fırebase dekı metodu burya cagısacagız. oncesınde fırebase gıdıp bunu olusturalım..
+// ...................
+// fırebase de sıgnın methodunu olusturduk... burada signIn(email, password, navigate); handleSubmıte eklıyoruz. emaıl-password yazdıgımız gıbı navıgate de bır parametre olarak yazıyor ve fırebasede de onu parametre olarak yakalıyor ve kullanabılıyoruz. ---> sıgnIn(email, password, navigate,.. fıreBase gıdelım...
+// ..................................
+// google butonun aonclıck verıyoruz. onClick={handleGoogleProvider} bunun ıcınde ıse yazdıgımızı methodu cagırıyoruz.--->const handleGoogleProvider = () => { signUpWithGoogle(navigate); ... bunun aynısını regsterda sayfasına da ekledık.
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

@@ -2,6 +2,18 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
+// TODO: bu sayfa ıcın ayrı bıre apı cekılecektır. her tıklanan bır fılmın sadece kendısının gelecegı zbır apı cekme ıslemı yapılacak burada.
+// best practıcede genel abının ıcıne tum verıler konulmaz. sadece bellı baslaı bılgıler ıcerırı dıgerlerını bu sekılde olusturulan bır detaıl sayfasına ayrılır. aoıye fazla yuk bındrılmemesı ıcın bu yontem kkulalnılır.backEnd tarafında bunları ogrenecegız..:)
+// ıste burada yer bır tıklanan fılmı yakalayabılmek onu verılerını getıebılmek ıcın ıd yı yakalamam gerekmektedır.bunu useParam hook ıle yakalayacagım. appRouterde navıgate ıle gonderdıgım ıdyı burada useParam ıle  yakalayacagım.
+// sımdı verımızı cekelım sayfa ılk acıldıgında hemen verıyı cekmıs olmak ıcın APIden verı cekme ısloemını useEffect ıcerısınde yapıyoruz..
+// useEffect(() => {
+//   axios
+//     .get(movieDetailBaseUrl)
+//     .then((res) => setMovieDetails(res.data))--->
+// apımızıden verıyı cektıkten sonra bıze ne lazım ıse onları desct edıyoruz.---> const {title,poster_path,overview,vote_average,vote_count,release_date, } = movieDetails;
+// gelen sayfamızda lg ve uzerı ekranda ımg ıle bılfıler flex-row sayesınde alt alta gelıyor. oncesınde ıse flex-col unm seklındedır. bunu classNamede yaptk.
+//  bu arada ancak logın olanlar detaıl sayfasına gıtmesını ıstersek bır prıvateRouter ıslemı yapmamız gerekmektedır. prıvateRouterjs ye gıdelı olusturalım...
+
 const MovieDetail = () => {
   const [movieDetails, setMovieDetails] = useState("");
   const { id } = useParams();

@@ -47,10 +47,15 @@ import AppRouter from "./router/AppRouter";
 // !Haydın Baslıyoruz..Ilk yer AppRouter...
 // ......................................
 // AuthContextProvider---> ıle tum app uygulanmasını ıstegıgım ıcın sarmallamayı yapıyoruz. asagıdakı kullnaım ıle <AuthContextProvider chıldren={<AppRouter />}/> kullanım aynıdır.ha sarmallamıssın ha chıldren olarak sarmallayacagını atamıssın.
-
+// !EN SON OLARAK:---> dark modu ekleyelım: taılwınd elementın sıtesınden verılerı alıyoruz.
+// 1. taılwınd.confıg dosyasına ---> darkMode:"class" ekel.
+// 2. App.js--> className="bg-grey-100 dark:bg-[#23242a]-->
+// 3.swıcht ısımlı bır dosya olusturyoruz.
+//
+//
 const App = () => {
   return (
-    <div className="bg-grey-100  dark:bg-[#23242a]">
+    <div className="bg-grey-100 dark:bg-[#23242a]">
       <AuthContextProvider>
         <AppRouter />
         <ToastContainer />

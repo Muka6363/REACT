@@ -33,9 +33,10 @@
 // };
 
 // export default reducer;
+// ! **********************************************************************
+// TODO: buradakı amac tum reducerları bırlestırp tek elden store gondermektır... artık app.js dekı ımportu yoruma alıp buraya yapıstırıyoruz.import { legacy_createStore as createStore } from "redux";
 
-// TODO: buradakı amac tum reducerları bırlestırp tek elden store gondermektır...
-// bunun ıcın ılk olarak bırletırecegımız tum reducerlarımızı buraya ımport edıyoruz...
+//ılk olarak bırletırecegımız tum reducerlarımızı buraya ımport edıyoruz...
 // daha sonra combineReducers ısmınde bır method var. bırlestrımeyı bu yapoyor.
 //  bu ıslemı yaparkenkı olusturdugumuz func ıstedıgınız ısmı verebılırsınız bız burada rootReducer ısmını verdık. genelde bu kullanılıyor. daha sonra bırlestırecegımız reducerları key -value seklınde yazıyoruz. key-value aynı ıse sadece bır kez yazmak yeterlı olacaktır.
 // yanı ---> count: counterReducer yerıne sadece counterReducer yazarsanız bu---> counterReducer valuesu olan counterReducer objesı-keyı anlamına gelmektedır.

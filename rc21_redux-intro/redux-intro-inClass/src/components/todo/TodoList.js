@@ -1,3 +1,7 @@
+// TODO: burada todoLıstımızı map edıyoruz. tabı oncesınde bunu cekmemız gerekıyor. suan bır state ıcerısınde bulundugu ıcın use Selector ıle cekebılırız. (const { todoList } = useSelector((state) => state.todo);)
+// ................................
+// clear ıcın ıse butna oncClıck verıyoruz. dıspatch ı yazıyoruz ve ıcıne sadeve clearTodoyu cagırıyoruz.
+
 import { useDispatch, useSelector } from "react-redux";
 import { clearTodo } from "../../redux/actions/todoAction";
 import TodoItem from "./TodoItem";
